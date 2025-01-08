@@ -1,13 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>QuintsDev</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Animate.css -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>
-      me retiro de la programacion porque es muy dificil y estoy muy estresado
-    </h1>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Paolo Quintiliani S.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+      <div class="animated-bg">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-4 animate__animated animate__fadeIn">
+              Hola, soy <span class="text-white">Paolo!</span>
+            </h1>
+            <p
+              class="lead mb-4 animate__animated animate__fadeIn animate__delay-1s"
+            >
+              Desarrollador Web Full Stack Javascript
+            </p>
+            <a
+              href="#projects"
+              class="btn btn-outline-light btn-lg animate__animated animate__fadeIn animate__delay-2s"
+              >Ver Proyectos</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Sobre mí</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="./assets/img/IMG_2518.jpeg"
+              alt="Profile"
+              class="profileImg mb-4"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p class="lead">
+              Soy un entusiasta del desarrollo web en constante aprendizaje, con
+              un enfoque en mejorar tanto mis habilidades técnicas como la
+              experiencia de usuario en los proyectos que desarrollo. A lo largo
+              de mi camino como estudiante, he trabajado en diversos proyectos
+              que me han permitido adquirir conocimientos sobre tecnologías
+              clave como JavaScript, Node.js, Express.
+            </p>
+            <div class="mt-4">
+              <h4>Mis objetivos:</h4>
+              <ul>
+                <li>Crear aplicaciones web innovadoras</li>
+                <li>Aprender continuamente nuevas tecnologías</li>
+                <li>Colaborar en proyectos desafiantes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Mis Proyectos</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="project-card p-3">
+              <img
+                src="./assets/img/clubDeportivo.png"
+                alt="Club Deportivo"
+                class="img-fluid mb-3"
+              />
+              <h4>Club Deportivo Discipline Spa</h4>
+              <p>
+                Proyecto realizado en clases, usando metodo CRUD, con pgAdmin y
+                NodeJS, Express, HBS, lodash y Axios.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-light">Demo</a>
+                <a href="#" class="btn btn-outline-light">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-card p-3">
+              <img
+                src="./assets/img/collageFotos.png"
+                alt="Carga Archivos"
+                class="img-fluid mb-3"
+              />
+              <h4>Carga de Archivos</h4>
+              <p>
+                Proyecto de carga de imagenes, y posterior visualizacion en
+                collage usando ruteo, usando librerias tales como Express,
+                Express-FileUpload y FileUpload.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-light">Demo</a>
+                <a href="#" class="btn btn-outline-light">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-card p-3">
+              <img
+                src="./assets/img/mascotas.png"
+                alt="Mascotas"
+                class="img-fluid mb-3"
+              />
+              <h4>Proyecto 3</h4>
+              <p>
+                Vinculación de Base de datos con NodeJs, usando Sequelize, pg,
+                pg-hstore y Express.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-outline-light">Demo</a>
+                <a href="#" class="btn btn-outline-light">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Habilidades</h2>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="skill-item">
+              <h4>HTML5</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="skill-item">
+              <h4>CSS3</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="skill-item">
+              <h4>JavaScript</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="skill-item">
+              <h4>NodeJs</h4>
+              <div class="progress">
+                <div class="progress-bar" style="width: 30%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Contacto</h2>
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <form class="contact-form">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Nombre" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Mensaje"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4">
+      <div class="container text-center">
+        <div class="social-links mb-4">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-figma"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Iguana Web Service. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+          document.querySelector(".navbar").style.backgroundColor =
+            "rgba(26, 26, 26, 0.95)";
+        } else {
+          document.querySelector(".navbar").style.backgroundColor =
+            "rgba(26, 26, 26, 0.9)";
+        }
+      });
+
+      // Animate elements on scroll
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInUp"
+            );
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll("section > .container").forEach((section) => {
+        observer.observe(section);
+      });
+    </script>
   </body>
 </html>
